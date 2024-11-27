@@ -20,9 +20,8 @@ int main()
 		scanf("%d",&empl[i].pay);
 	}
 	printf("\nEmployee Details : ");
-	printf("\n=============================\n");
 	printf("Emp no\t Emp Name Pay");
-	printf("\n=============================\n");
+	printf("\n");
 	for (i=0;i<n;i++)
 	{
 		printf("%d\t %s\t %d\n",empl[i].empno,empl[i].empname,empl[i].pay);
