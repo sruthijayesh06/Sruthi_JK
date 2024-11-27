@@ -4,14 +4,12 @@ int main()
     int n, i, j; 
     printf("Enter the size of array: ");
     scanf("%d",&n);
-
     int arr[n]; 
     for(i =0; i <n; i++)
     {
         printf("Enter the number: ");
         scanf("%d",&arr[i]);
     }
-
     for(j =0; j <n; j++)
     {
     for(i =j+1; i <n; i++)
@@ -24,14 +22,10 @@ int main()
         }
     }
     }
-
-
     for(i =0; i <n; i++)
     {
         printf("%d\n",arr[i]);
     }
-
-
     int N;
     printf("Enter the index by which you want to rotate the array: ");
     scanf("%d",&N);
@@ -39,21 +33,15 @@ int main()
     for(i =0; i <n;i++)
     {
         arr1[i] = arr[(N+i)%n];
-
     }
     for(i =0; i <n; i++)
     {
         printf("%d\n",arr1[i]);
     }
-
-
     int elements = sizeof(arr1)/sizeof(arr[0]);
-
-
     int pivot;
     int start = 0;
     int end = elements;
-
     while(start <= end)
     {
      int mid = (start+end)/2;
@@ -61,7 +49,6 @@ int main()
      {
         pivot = arr1[mid+1];
         break;
-
      }
      else
      {
@@ -74,13 +61,7 @@ int main()
         {
             end = mid-1;
         }
-     }
-\
-       
-        
     }
-
+    }
     printf("%d is the pivot element",pivot); 
-
-
 }
