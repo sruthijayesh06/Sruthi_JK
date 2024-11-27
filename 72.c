@@ -11,10 +11,10 @@ int main()
         printf("Enter the number: ");
         scanf("%d",&arr[i]);
     }
-    int k=1;
-    printf("Enter the value of N: ");
-    scanf("%d",&n);
-    for(i =0; i <n; i++)
+    int k;
+    printf("Enter the no of positions to be rotated : ");
+    scanf("%d",&k);
+    for(i =0; i<n;i++)
     {
         arr1[i] = arr[(k+i)%n];
     }
